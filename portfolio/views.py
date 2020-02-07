@@ -4,4 +4,4 @@ def viewPortfolio(request):
     projects = {}
     
     context = {'projects':projects}
-    return render(request, 'portfolio/viewportfolio.html', context)
+    return render(request, 'portfolio/listandtuple.html', context)
