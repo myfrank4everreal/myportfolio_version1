@@ -76,7 +76,7 @@ def python_cours_details(request, course_id):
         return render(request, 'portfolio/error_handling.html', context)
     elif course_id == 18:
         context = {'course':course}
-        return render(request, 'portfolio/global_vs_loacal.html', context)
+        return render(request, 'portfolio/global_vs_local.html', context)
     elif course_id == 19:
         context = {'course':course}
         return render(request, 'portfolio/classes_and_objects.html', context)
@@ -86,7 +86,8 @@ def python_cours_details(request, course_id):
 
 
 
-
+# search function
+# def searchCourse(request):
 
 
 

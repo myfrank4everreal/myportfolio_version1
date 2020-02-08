@@ -3,8 +3,8 @@
 {% block content %}
 <div class="col-md-8 mb-5" >  
     
-
-        <h3>Objects</h3>
+<br>
+<h3>Objects</h3>
       
 <p>
     Up until this point you may have have heard me reference
@@ -23,10 +23,13 @@
           determine what class objects belong to.
 </p>
 
-<div style="background: #f8f8f8; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;"><pre style="margin: 0; border: 0px; line-height: 125%;"><span style="color: #204a87;">type</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #4e9a06;">"hello"</span><span style="color: #000000; font-weight: bold;">)</span>  <span style="color: #8f5902; font-style: italic;"># -&gt; &lt;class 'str'&gt;</span>
+<div style="background: #f8f8f8; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+    <pre style="margin: 0; border: 0px; line-height: 125%;">
+    <span style="color: #204a87;">type</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #4e9a06;">"hello"</span><span style="color: #000000; font-weight: bold;">)</span>  <span style="color: #8f5902; font-style: italic;"># -&gt; &lt;class 'str'&gt;</span>
     <span style="color: #204a87;">type</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #0000cf; font-weight: bold;">1</span><span style="color: #000000; font-weight: bold;">)</span>        <span style="color: #8f5902; font-style: italic;"># -&gt; &lt;class 'int'&gt;</span>
     <span style="color: #204a87;">type</span><span style="color: #000000; font-weight: bold;">([</span><span style="color: #0000cf; font-weight: bold;">1</span><span style="color: #000000; font-weight: bold;">,</span><span style="color: #0000cf; font-weight: bold;">3</span><span style="color: #000000; font-weight: bold;">])</span>    <span style="color: #8f5902; font-style: italic;"># -&gt; &lt;class 'list'&gt;</span>
-    </pre></div>
+    </pre>
+</div><br>
 
 <h3>Classes</h3>
 <p>
@@ -37,16 +40,18 @@
       class and adding our own methods.    
 </p>
 
-<div style="background: #f8f8f8; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;"><pre style="margin: 0; border: 0px; line-height: 125%;"><span style="color: #204a87; font-weight: bold;">class</span> <span style="color: #000000;">Number</span><span style="color: #000000; font-weight: bold;">:</span>
-    <span style="color: #204a87; font-weight: bold;">def</span> <span style="color: #000000;">__init__</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #3465a4;">self</span><span style="color: #000000; font-weight: bold;">):</span>
-        <span style="color: #3465a4;">self</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">var</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #0000cf; font-weight: bold;">24</span>
-    
-    <span style="color: #204a87; font-weight: bold;">def</span> <span style="color: #000000;">display</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #3465a4;">self</span><span style="color: #000000; font-weight: bold;">):</span>
-        <span style="color: #204a87; font-weight: bold;">print</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #3465a4;">self</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">var</span><span style="color: #000000; font-weight: bold;">)</span>
+<div style="background: #f8f8f8; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+    <pre style="margin: 0; border: 0px; line-height: 125%;">
+    <span style="color: #204a87; font-weight: bold;">class</span> <span style="color: #000000;">Number</span><span style="color: #000000; font-weight: bold;">:</span>
+        <span style="color: #204a87; font-weight: bold;">def</span> <span style="color: #000000;">__init__</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #3465a4;">self</span><span style="color: #000000; font-weight: bold;">):</span>
+            <span style="color: #3465a4;">self</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">var</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #0000cf; font-weight: bold;">24</span>
+        
+        <span style="color: #204a87; font-weight: bold;">def</span> <span style="color: #000000;">display</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #3465a4;">self</span><span style="color: #000000; font-weight: bold;">):</span>
+            <span style="color: #204a87; font-weight: bold;">print</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #3465a4;">self</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">var</span><span style="color: #000000; font-weight: bold;">)</span>
 
-<span style="color: #000000;">newNum</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #000000;">Number</span><span style="color: #000000; font-weight: bold;">()</span>
-<span style="color: #000000;">newNum</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">display</span><span style="color: #000000; font-weight: bold;">()</span>
-</pre></div>
+    <span style="color: #000000;">newNum</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #000000;">Number</span><span style="color: #000000; font-weight: bold;">()</span>
+    <span style="color: #000000;">newNum</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">display</span><span style="color: #000000; font-weight: bold;">()</span>
+    </pre></div>
 
 <p>The __init__() is whats known as a constructor method. It is automatically called when we create a new instance of the class.
     The display() is whats known as a method. We can use it on instances of the class.
@@ -58,7 +63,7 @@
       familiarity with it.</p>
 
        <div class="mt-5 mb-5">
-           <a href="#"><button type="button" class="btn mybtn">Next Lesson</button></a>
+           <a href="{% url 'courses' 20 %}"><button type="button" class="btn mybtn">Next Lesson</button></a>
        </div>
 
 

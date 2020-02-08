@@ -3,8 +3,9 @@
 {% block content %}
 <div class="col-md-8 mb-5" >  
     
-
-        <h1>Getting started</h1>
+          <br>
+          <br>
+        <h3>Getting started</h3>
          <p>
                 Whenever we are writing python code we want to use some sort of a text-editor or IDE (Integrated Development Environment). Luckily for us when we install python it comes with its own editor named "IDLE". IDLE has two main components, a text-editor and a shell. The shell is what will appear after launching the program. In the shell you can type any python code you wish and after hitting enter it will immediately be executed. This is great for testing small snippets of code but it's not what we want for right now. To get started we need to get to the text-editor built into IDLE.
 
@@ -16,9 +17,9 @@
 
                  And now we are ready to start coding.
          </p>
-   
+         <br>
 
-         <h1>Data Type</h1>
+         <h3>Data Type</h3>
          <p>A "Data Type" is simply a classification of information. The data type of an object dictates the different things that we can do to it and use it for.
 
                 In Python there are many different data types but the ones we are going to talk about now are the following:
@@ -33,19 +34,22 @@
         
         
         </p>
+        <br>
         <h5>Example:</h5>
         <div style="background: #f8f8f8; overflow:auto; width:auto; border:solid grey; border-width:.1em .1em .1em .8em; padding: .2em .6em;">
 
-                <pre style="margin: 0; border: 0px; line-height: 125%;"> <span style="color: #204a87;">int</span><span style="color: #000000; font-weight: bold;">:</span> <span style="color: #0000cf; font-weight: bold;">1</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">3</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">5</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">9</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #ce5c00; font-weight: bold;">-</span><span style="color: #0000cf; font-weight: bold;">3</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">0</span>
-                <span style="color: #204a87;">float</span><span style="color: #000000; font-weight: bold;">:</span> <span style="color: #0000cf; font-weight: bold;">1.0</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">0.9</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #ce5c00; font-weight: bold;">-</span><span style="color: #0000cf; font-weight: bold;">0.7</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">5.</span><span style="color: #0000cf; font-weight: bold;">6</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">8.0</span>
-                <span style="color: #204a87;">str</span><span style="color: #000000; font-weight: bold;">:</span> <span style="color: #4e9a06;">"hello"</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #4e9a06;">"0.2"</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #4e9a06;">'-98'</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #4e9a06;">'True'</span>
-                <span style="color: #204a87;">bool</span><span style="color: #000000; font-weight: bold;">:</span> <span style="color: #3465a4;">True</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #3465a4;">False</span>
-                </pre>
-        
+        <pre style="margin: 0; border: 0px; line-height: 125%;"> 
+        <span style="color: #204a87;">int</span><span style="color: #000000; font-weight: bold;">:</span> <span style="color: #0000cf; font-weight: bold;">1</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">3</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">5</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">9</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #ce5c00; font-weight: bold;">-</span><span style="color: #0000cf; font-weight: bold;">3</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">0</span>
+        <span style="color: #204a87;">float</span><span style="color: #000000; font-weight: bold;">:</span> <span style="color: #0000cf; font-weight: bold;">1.0</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">0.9</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #ce5c00; font-weight: bold;">-</span><span style="color: #0000cf; font-weight: bold;">0.7</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">5.</span><span style="color: #0000cf; font-weight: bold;">6</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #0000cf; font-weight: bold;">8.0</span>
+        <span style="color: #204a87;">str</span><span style="color: #000000; font-weight: bold;">:</span> <span style="color: #4e9a06;">"hello"</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #4e9a06;">"0.2"</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #4e9a06;">'-98'</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #4e9a06;">'True'</span>
+        <span style="color: #204a87;">bool</span><span style="color: #000000; font-weight: bold;">:</span> <span style="color: #3465a4;">True</span><span style="color: #000000; font-weight: bold;">,</span> <span style="color: #3465a4;">False</span>
+        </pre>
+
         </div>
+        <br><hr>
 
 
-        <h1>Creating Variables</h1>
+        <h3>Creating Variables</h3>
         <p>
                 A variable is something that we use to hold a value. We can create are own variables that hold
                  and store values by typing a variable name and then setting
@@ -60,8 +64,9 @@
         <div style="background: #f8f8f8; overflow:auto; width:auto; border:solid grey; border-width:.1em .1em .1em .8em; padding: .2em .6em;">
 
                 <pre style="margin: 0; border: 0px; line-height: 125%;">
-                        <span style="color: #204a87;">frank</span><span style="color: #000000; font-weight: bold;">=</span> <span style="color: #0000cf; font-weight: bold;">hello</span> 
-                        <span style="color: #204a87;">myVariable</span><span style="color: #000000; font-weight: bold;">=</span> <span style="color: #0000cf; font-weight: bold;">True</span>
+        <span style="color: #204a87;">frank</span><span style="color: #000000; font-weight: bold;">=</span> <span style="color: #0000cf; font-weight: bold;">hello</span> 
+        <span style="color: #204a87;">myVariable</span><span style="color: #000000; font-weight: bold;">=</span> <span style="color: #0000cf; font-weight: bold;">True</span>
+
                 </pre>
         
         </div>
@@ -71,22 +76,28 @@ To reference our variables we simply type their name.
  typing that variable name and then setting it equal 
  to a new value.
 
- <div style="background: #f8f8f8; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;"><pre style="margin: 0; line-height: 125%; border: 0px;"><span style="color: #000000;">tim</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #4e9a06;">"hello"</span>
+
+ <div style="background: #f8f8f8; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+        <pre style="margin: 0; line-height: 125%; border: 0px;">
+        <span style="color: #000000;">frank</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #4e9a06;">"hello"</span>
         <span style="color: #000000;">myVariable</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #3465a4;">True</span>
         
-        <span style="color: #000000;">myVariable</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #0000cf; font-weight: bold;">3</span>  <span style="color: #8f5902; font-style: italic;"># myVariable now is equal to 3</span>
-        <span style="color: #000000;">joe</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #000000;">myVariable</span>  <span style="color: #8f5902; font-style: italic;"># joe is now equal to 3 because myVariable has the value 3 </span>
+        <span style="color: #000000;">myVariable</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #0000cf; font-weight: bold;">5</span>  <span style="color: #8f5902; font-style: italic;"># myVariable now is equal to 5</span>
+        <span style="color: #000000;">nina</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #000000;">myVariable</span>  <span style="color: #8f5902; font-style: italic;"># nina is now equal to 5 because myVariable has the value 5 </span>
         </pre>
 </div>
+<br>
 
-<h1>Lets Display Somethings To The Screen</h1>
+<h3>Lets Display Somethings To The Screen</h3>
 <p>To display something to the shell in python we can use the keyword
 "print"
 </p>
 
-<div style="background: #f8f8f8; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;"><pre style="margin: 0; line-height: 125%; border: 0px;"><span style="color: #000000;">var</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #4e9a06;">"hello"</span>
+<div style="background: #f8f8f8; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+        <pre style="margin: 0; line-height: 125%; border: 0px;">
+        <span style="color: #000000;">john</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #4e9a06;">"hello"</span>
         <span style="color: #204a87; font-weight: bold;">print</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #4e9a06;">"hi"</span><span style="color: #000000; font-weight: bold;">)</span>
-        <span style="color: #204a87; font-weight: bold;">print</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #000000;">var</span><span style="color: #000000; font-weight: bold;">)</span>  <span style="color: #8f5902; font-style: italic;"># This will print "hello"</span>
+        <span style="color: #204a87; font-weight: bold;">print</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #000000;">john</span><span style="color: #000000; font-weight: bold;">)</span>  <span style="color: #8f5902; font-style: italic;"># This will print "hello"</span>
         </pre></div>
 
         <p>Note: To run your program and see the output click the 
@@ -94,7 +105,10 @@ To reference our variables we simply type their name.
                 Run > Run Module.
         </p>
 
-        <div><button class="btn btn-primary " style="width: 100%;">NEXT LESSON</button></div>
+        <div class="mt-5 mb-5">
+                <a href="{% url 'courses' 2 %}"><button type="button" class="btn mybtn">Next Lesson</button></a>
+            </div>
+     
 
 </div>
 {% endblock %}
