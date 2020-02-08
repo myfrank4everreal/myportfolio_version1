@@ -104,26 +104,26 @@
                 
                 
                 
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Variables & Data Types </a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Operators and input</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-success">conditions</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">IF/ELIF/ELSE</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Chained Conditionals and Nested statements</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-info">For Loops</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-light">While Loops</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">List and Tuples</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Iterations by Item </a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">String methods</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Slice Operator</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Functions</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-info">File IO (Read Files)</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-light">File IO (Write Files)</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">List Methods</a>
+                <a href="{% url 'courses' 1  %}" class="list-group-item list-group-item-action list-group-item-primary">Variables & Data Types </a>
+                <a href="{% url 'courses' 2  %}" class="list-group-item list-group-item-action list-group-item-secondary">Operators and input</a>
+                <a href="{% url 'courses' 3  %}" class="list-group-item list-group-item-action list-group-item-success">conditions</a>
+                <a href="{% url 'courses' 4  %}" class="list-group-item list-group-item-action list-group-item-danger">IF/ELIF/ELSE</a>
+                <a href="{% url 'courses' 5  %}" class="list-group-item list-group-item-action list-group-item-warning">Chained Conditionals and Nested statements</a>
+                <a href="{% url 'courses' 6  %}" class="list-group-item list-group-item-action list-group-item-info">For Loops</a>
+                <a href="{% url 'courses' 7  %}" class="list-group-item list-group-item-action list-group-item-light">While Loops</a>
+                <a href="{% url 'courses' 8  %}" class="list-group-item list-group-item-action list-group-item-dark">List and Tuples</a>
+                <a href="{% url 'courses' 9  %}" class="list-group-item list-group-item-action list-group-item-primary">Iterations by Item </a>
+                <a href="{% url 'courses' 10  %}" class="list-group-item list-group-item-action list-group-item-secondary">String methods</a>
+                <a href="{% url 'courses' 11  %}" class="list-group-item list-group-item-action list-group-item-danger">Slice Operator</a>
+                <a href="{% url 'courses' 12  %}" class="list-group-item list-group-item-action list-group-item-warning">Functions</a>
+                <a href="{% url 'courses' 13  %}" class="list-group-item list-group-item-action list-group-item-info">File IO (Read Files)</a>
+                <a href="{% url 'courses' 14  %}" class="list-group-item list-group-item-action list-group-item-light">File IO (Write Files)</a>
+                <a href="{% url 'courses' 15  %}" class="list-group-item list-group-item-action list-group-item-dark">List Methods</a>
                 
-                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Modular Programm</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Error Handling(try and except</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-light">what is global a</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">List Methods</a>
+                <a href="{% url 'courses' 16  %}" class="list-group-item list-group-item-action list-group-item-warning">Modular Programm</a>
+                <a href="{% url 'courses' 17  %}" class="list-group-item list-group-item-action list-group-item-info">Error Handling(try and except</a>
+                <a href="{% url 'courses' 18  %}" class="list-group-item list-group-item-action list-group-item-light">what is global a</a>
+                <a href="{% url 'courses' 19  %}" class="list-group-item list-group-item-action list-group-item-dark">Classes and Objects</a>
                 </div><br><hr><br>
                 
                 
@@ -151,6 +151,29 @@
 
 
             <!-- Blog Entries Column -->
+          
+              {% if course  %}
+              
+            <div class="col-md-8 mb-5 " >  
+
+                <div class="card bg-dark text-white">
+                  <img src="{% static 'sitetemplate/images/python_logoshow.jpg' %}" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Lesson {{ course.id }} : {{ course.title }}</h5>
+                   
+                    <p class="card-text"></p>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              
+
+              
+
+              {% endif %}
+            
+            
+
+            
             {% block content %}
             {% endblock %}
 

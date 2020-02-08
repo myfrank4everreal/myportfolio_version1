@@ -56,7 +56,7 @@
   <!-- the showcase image -->
   <header>
     <div class="showcase">
-      <img style="width: 300px !important; height: 30px !important;" div class="showcase" src="{% static  'sitetemplate/images/Frame 1.png' %}" alt="not found">
+      <img   class="showcase" src="{% static  'sitetemplate/images/Frame 1.png' %}" alt="not found">
     </div>
   </header>
 
@@ -194,13 +194,14 @@
         </div>
              
           <div class="mycontainer text-center">
-            i this is a tutorial for complete beginer it is designed to help you get an understanding
+            this is a tutorial for complete beginner. It is designed to help you get an understanding
             of the very basics of python programming as fast as possible 
-            <h6>Here i will walk you through the basics of python programming from the beginer level 
-              to the intermidiate level where you will be confortable at writing python code.
-              After walking through this python beginer to confortable level we will be heading streigth 
-              to web development with python and django, believe me this is the most exciting part of programming.
-              You will be amaize at how mush and what you will learn in this tutorial.
+            <h6>Here I will walk you through the very core concept of python programming.
+                Make sure you carry out the challenge projects to help you solidify your learning.
+                After walking through this python beginner to comfortable level we will be heading straight 
+                to web development with python and Django, believe me this is the most exciting part of programming.
+                You will be amazed at how mush and what you will learn in this tutorial.
+              
             </h6>    
           </div>
 
@@ -209,7 +210,7 @@
 
             <div class="text-center button-control" >
               <small >hope you are excited let's jump right in</small> <br>
-            <a href="#"><button type="button"  class="mybtn btn btn-primary" >Begin Here</button></a>
+            <a href="{% url 'python_intro' %}"><button type="button"  class="mybtn btn " >view all</button></a>
           </div>
 
         <!-- ((((((((((((((((((())))))))))))))))))) -->
@@ -233,7 +234,7 @@
                     platforms, and can be freely distributed.
                     <br>
                   
-                    <a href="#"><button type="button" class="btn btn-primary mt-5 mb-5" >start learning</button></a>
+                    <a href="{% url 'python_intro' %}"><button type="button" class="btn btn-primary mt-5 mb-5" >start learning</button></a>
                   </p>
             <p class="card-text"><small class="text-muted"></small></p>
           </div>
